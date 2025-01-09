@@ -5,6 +5,9 @@ def nreapeatworld(n):
         print("Hello World")
         n = n - 1
 
-world()
-nreapeatworld(5)
-nreapeatworld(10)
+print("How many times would you like to print Hello World?")
+number = input()
+if int(number) == 1:
+    world()
+else:
+    nreapeatworld(int(number))
